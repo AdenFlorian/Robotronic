@@ -11,35 +11,35 @@ public class Main : MonoBehaviour {
 
 	// is static so that derived classes don't get their own;
 	// any changes will be made to the one and only int score
-	public static int score;			// derived classes add to this when monsters are killed or humans saved
+	public int score;			// derived classes add to this when monsters are killed or humans saved
 	public GameObject scoreObject;		// used to hold the Score GUI Text GameObject
 
-	public static int wave;				// holds the current wave for the GUI text
+	public int wave;				// holds the current wave for the GUI text
 	public GameObject waveObject;
 
-	public static int lives;			// holds the number of lives left for the GUI text
+	public int lives;			// holds the number of lives left for the GUI text
 	public GameObject livesObject;
 
-	public static int levelName;			// holds the name of the level for the GUI text
+	public int levelName;			// holds the name of the level for the GUI text
 	public GameObject levelNameObject;
 
-	public static Light groundLight;	// the light that illuminates and colors the ground layer
+	public Light groundLight;	// the light that illuminates and colors the ground layer
 
-	public static bool isPlayerAlive;	// self explanatory
+	public bool isPlayerAlive;	// self explanatory
 
-	public static GameObject player1;	// represents the Player1 GameObject
+	public GameObject player1;	// represents the Player1 GameObject
 
-	private static Vector3 spawnPos;
+	private Vector3 spawnPos;
 
-	private static GameObject camera;	// Main Camera GameObject
+	private GameObject camera;	// Main Camera GameObject
 
-	private static bool isGameOver = false;
-	private static bool levelWon = false;
+	private bool isGameOver = false;
+	private bool levelWon = false;
 
 	// mainmenu, level1, level2, pausemenu, credits
 	//protected static string gameState;
 
-	public static int monstersAlive;
+	public int monstersAlive;
 	public int mA;
 
 	protected LevelStruct[] levelArr;		// holds all the levels as LevelStructs
@@ -51,7 +51,7 @@ public class Main : MonoBehaviour {
 	void Start () {
 
 		score = 0;		// starting score at 0
-		wave = 0;		// wave will increase to 1 when the first level is created by LevelMaker()
+		wave = 0;		// starting wave - 1 ; wave will increase to 1 when the first level is created by LevelMaker()
 		lives = 3;		// if player dies when lives == 0 then game over
 		spawnPos = new Vector3(-0.3733258f, -0.1376212f, 0.91f);
 		levelArr = new LevelStruct[200];

@@ -50,7 +50,7 @@ public class MonsterSpawner : MonoBehaviour {
 		makeMineBoxes(mine_boxes);
 
 		makeMineSpikeBalls(mine_spikeballs);
-
+		
 		makeStumps(stumps);
 
 		makeVasils(vasils);
