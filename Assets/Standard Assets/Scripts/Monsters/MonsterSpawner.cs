@@ -14,9 +14,11 @@ public class MonsterSpawner : MonoBehaviour {
 	 * 
 	 * **/
 
-	private GameObject stump;
-	private GameObject vasil;
-	private GameObject mine_box;
+	private GameObject monster_stump_1;
+	private GameObject monster_vasil_1;
+	private GameObject monster_saucer_1;
+	private GameObject mine_box_1;
+	private GameObject mine_spikeball_1;
 
 	// Use this for initialization
 	void Start () {
@@ -37,6 +39,7 @@ public class MonsterSpawner : MonoBehaviour {
 	 * 4. in Main.cs > LevelMaker() > the line monsterSpawner.SpawnMonsters, 
 	 *    add an argument to the end with your monster variable you created in LevelStruct.cs
 	 * 5. in MonsterSpawner.cs (this one) > SpawnMonsters(), add new monster as argument
+	 * 5.2 add a class variable for the new monster
 	 * 6. Again in SpawnMonsters(), if your monster is not a mine, and not invincible, ad it to the first line (Main.monstersAlive = ...)
 	 * 6. in MonsterSpawner.cs, add a function to make that monster (copy an existing function if ouy want)
 	 * 7. Then add a line in SpawnMonsters() to call the new function with the correct argument
@@ -44,60 +47,122 @@ public class MonsterSpawner : MonoBehaviour {
 	 * 9. Make sure all scripts are saved
 	 * **/
 
-	public void SpawnMonsters(int stumps, int vasils, int saucer1s, int mine_boxes, int mine_spikeballs) {
-		Main.monstersAlive = stumps + vasils + saucer1s;	// When all these monsters are dead, the level is over
+	public void SpawnMonsters(	int monster_stump1_amount, 
+								int monster_vasil1_amount, 
+								int monster_saucer1_amount, 
+								int mine_box_1es, 
+								int mine_spikeball1_amount) {
 
-		makeMineBoxes(mine_boxes);
+		Main.monstersAlive = monster_stump1_amount + monster_vasil1_amount + monster_saucer1_amount;	// When all these monsters are dead, the level is over
 
-		makeMineSpikeBalls(mine_spikeballs);
+		// make mines first
+
+		makeMine_Box_1(mine_box_1es);
+
+		makeMine_Spikeball_1(mine_spikeball1_amount);
+
+		// make humans second
+
+		// make normal monsters third
 		
-		makeStumps(stumps);
+		makeMonster_Stump_1(monster_stump1_amount);
 
-		makeVasils(vasils);
+		makeMonster_Vasil_1(monster_vasil1_amount);
 
-		makeSaucer1s(saucer1s);
+		makeMonster_Saucer_1(monster_saucer1_amount);
+
+		// make invincible monsters last
 
 	}
 
-	void makeStumps(int amount) {
+	/** monsterArr[r,c]
+	 * 
+	 * 0 - monster_stump1_amount
+	 * 1 - monster_vasil1_amount
+	 * 2 - monster_saucer1_amount
+	 * 
+	 * mines start at [50,i]
+	 * 
+	 * 50 - mine_box_1es
+	 * 51 - mine_spikeball1_amount
+	 * 
+	 * humans start at [90,i]
+	 * 
+	 * 90 - human_man
+	 * 91 - human_woman
+	 * 92 - human_boy
+	 * 93 - human_girl
+	 * 94 - human_grandpa
+	 * 95 - human_grandma
+	 * 96 - human_baby
+	 * 
+	 * **/
+
+	/** BEGIN MONSTERS **/
+
+	void makeMonster_Stump_1(int amount) {
 		for (int i = 0; i < amount; i++) {
-			stump = Instantiate(Resources.Load("monster_stump"),
+			monster_stump_1 = Instantiate(Resources.Load("monster_stump_1"),
 								FindNextSpawn(1.13f),	// position.z
 								Random.rotation) as GameObject;
+			Main.monsterArr[0,i] = monster_stump_1;
 		}
 	}
 
-	void makeVasils(int amount) {
+	void makeMonster_Vasil_1(int amount) {
 		for (int i = 0; i < amount; i++) {
-			vasil = Instantiate(Resources.Load("monster_vasil"),
-								FindNextSpawn(1.1f),	// position.z
+			monster_vasil_1 = Instantiate(Resources.Load("monster_vasil_1"),
+								FindNextSpawn(1.75f),	// position.z
 								transform.rotation) as GameObject;
+			Main.monsterArr[1,i] = monster_vasil_1;
 		}
 	}
 
-	void makeSaucer1s(int amount) {
+	void makeMonster_Saucer_1(int amount) {
 		for (int i = 0; i < amount; i++) {
-			vasil = Instantiate(Resources.Load("saucer1Parent"),	// the name of the prefab
+			monster_saucer_1 = Instantiate(Resources.Load("monster_saucer_1"),	// the name of the prefab
 								FindNextSpawn(0.88f),	// position.z is the argument being passed
 								transform.rotation) as GameObject;
+			Main.monsterArr[2,i] = monster_saucer_1;
 		}
 	}
 
-	void makeMineBoxes(int amount) {
+	/** END MONSTERS **/
+
+	/** BEGIN UBERS **/
+
+	// ubers are invincible monsters
+
+	/** END UBERS **/
+
+	/** BEGIN MINES **/
+
+	void makeMine_Box_1(int amount) {
 		for (int i = 0; i < amount; i++) {
-			mine_box = Instantiate(Resources.Load("mine_box"),
+			mine_box_1 = Instantiate(Resources.Load("mine_box_1"),
 								FindNextSpawn(0.79f),// position.z
 								transform.rotation) as GameObject;
+			Main.monsterArr[50,i] = mine_box_1;
 		}
 	}
 
-	void makeMineSpikeBalls(int amount) {
+	void makeMine_Spikeball_1(int amount) {
 		for (int i = 0; i < amount; i++) {
-			mine_box = Instantiate(Resources.Load("mine_spikeball"),
+			mine_spikeball_1 = Instantiate(Resources.Load("mine_spikeball_1"),
 								FindNextSpawn(0.79f),// position.z
 								transform.rotation) as GameObject;
+			Main.monsterArr[51,i] = mine_spikeball_1;
 		}
 	}
+
+	/** END MINES **/
+
+	/** BEGIN HUMANS **/
+
+	// humans can be collected by the player for points
+	// humans can be killed by ubers or converted by special monsters (physcic monster things)
+
+	/** END HUMANS **/
 
 	Vector3 FindNextSpawn(float newZ) {
 		Vector3 nextSpawn = new Vector3();

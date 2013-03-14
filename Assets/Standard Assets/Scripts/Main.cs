@@ -4,6 +4,7 @@ using System.Collections;
 public class Main : MonoBehaviour {
 
 	public LevelStruct Level;
+	private static LevelStruct workingLevel;
 	public MonsterSpawner monsterSpawner;
 
 	[HideInInspector]
@@ -11,13 +12,13 @@ public class Main : MonoBehaviour {
 
 	// is static so that derived classes don't get their own;
 	// any changes will be made to the one and only int score
-	public int score;			// derived classes add to this when monsters are killed or humans saved
+	public static int score;			// derived classes add to this when monsters are killed or humans saved
 	public GameObject scoreObject;		// used to hold the Score GUI Text GameObject
 
-	public int wave;				// holds the current wave for the GUI text
+	public static int wave;				// holds the current wave for the GUI text
 	public GameObject waveObject;
 
-	public int lives;			// holds the number of lives left for the GUI text
+	public static int lives;			// holds the number of lives left for the GUI text
 	public GameObject livesObject;
 
 	public int levelName;			// holds the name of the level for the GUI text
@@ -25,9 +26,9 @@ public class Main : MonoBehaviour {
 
 	public Light groundLight;	// the light that illuminates and colors the ground layer
 
-	public bool isPlayerAlive;	// self explanatory
+	public static bool isPlayerAlive;	// self explanatory
 
-	public GameObject player1;	// represents the Player1 GameObject
+	public static GameObject player1;	// represents the Player1 GameObject
 
 	private Vector3 spawnPos;
 
@@ -39,12 +40,12 @@ public class Main : MonoBehaviour {
 	// mainmenu, level1, level2, pausemenu, credits
 	//protected static string gameState;
 
-	public int monstersAlive;
+	public static int monstersAlive;
 	public int mA;
 
-	protected LevelStruct[] levelArr;		// holds all the levels as LevelStructs
-	protected GameObject[] monsterArr;		// holds all the monsters present in that wave; gets cleared at the end of each wave/level
-	protected GameObject[] mineArr;
+	protected static LevelStruct[] levelArr;		// holds all the levels as LevelStructs
+	public static GameObject[,] monsterArr;		// holds all the monsters present in that wave; gets cleared at the end of each wave/level
+	public static GameObject[] mineArr;
 	
 
 	// Use this for initialization
@@ -74,51 +75,51 @@ public class Main : MonoBehaviour {
 		// begin level definitions
 		LevelStruct level1 = LevelStruct.CreateInstance("LevelStruct") as LevelStruct;
 		levelArr[0] = level1;
-		level1.stumps = 5;
-		level1.vasils = 0;
-		level1.saucer1s = 5;
-		level1.mine_boxes = 0;
+		level1.monster_stump1_amount = 5;
+		level1.monster_vasil1_amount = 0;
+		level1.monster_saucer1_amount = 5;
+		level1.mine_box_1es = 0;
 		level1.sumMonsters();
 		level1.name = "Hello, World!";
 
 		LevelStruct level2 = LevelStruct.CreateInstance("LevelStruct") as LevelStruct;
 		levelArr[1] = level2;
-		level2.stumps = 6;
-		level2.vasils = 0;
-		level2.mine_boxes = 4;
+		level2.monster_stump1_amount = 6;
+		level2.monster_vasil1_amount = 0;
+		level2.mine_box_1es = 4;
 		level2.sumMonsters();
 		level2.name = "Another day in paradise...";
 
 		LevelStruct level3 = LevelStruct.CreateInstance("LevelStruct") as LevelStruct;
 		levelArr[2] = level3;
-		level3.stumps = 3;
-		level3.vasils = 4;
-		level3.mine_boxes = 6;
+		level3.monster_stump1_amount = 3;
+		level3.monster_vasil1_amount = 4;
+		level3.mine_box_1es = 6;
 		level3.sumMonsters();
 		level3.name = "I really wish there was some upbeat music playing...";
 
 		LevelStruct level4 = LevelStruct.CreateInstance("LevelStruct") as LevelStruct;
 		levelArr[3] = level4;
-		level4.stumps = 0;
-		level4.vasils = 10;
-		level4.mine_boxes = 2;
+		level4.monster_stump1_amount = 0;
+		level4.monster_vasil1_amount = 10;
+		level4.mine_box_1es = 2;
 		level4.sumMonsters();
 		level4.name = "WTF are these...pills?";
 
 		LevelStruct level5 = LevelStruct.CreateInstance("LevelStruct") as LevelStruct;
 		levelArr[4] = level5;
-		level5.stumps = 3;
-		level5.vasils = 10;
-		level5.mine_boxes = 20;
+		level5.monster_stump1_amount = 3;
+		level5.monster_vasil1_amount = 10;
+		level5.mine_box_1es = 20;
 		level5.sumMonsters();
 		level5.name = "Bet you wish you played more minesweeper now...";
 
 		LevelStruct level6 = LevelStruct.CreateInstance("LevelStruct") as LevelStruct;
 		levelArr[5] = level6;
-		level6.stumps = 10;
-		level6.vasils = 10;
-		level6.mine_boxes = 0;
-		level6.mine_spikeballs = 6;
+		level6.monster_stump1_amount = 10;
+		level6.monster_vasil1_amount = 10;
+		level6.mine_box_1es = 0;
+		level6.mine_spikeball1_amount = 6;
 		level6.sumMonsters();
 		level6.name = "Serksth Lerver";
 		// end level definitions
@@ -145,7 +146,7 @@ public class Main : MonoBehaviour {
 		}
 
 		if (monstersAlive <= 0) {	// monstersAlive is in MonsterSpawner.cs
-			Debug.Log("monstersAlive if expression triggered");
+			Debug.Log("monstersAlive has reached 0");
 			currentLevel++;
 			
 			if (wave == 0) { } else { ClearMonsters(); }		// clears the board of monsters
@@ -163,28 +164,32 @@ public class Main : MonoBehaviour {
 		
 		player1.transform.position = spawnPos;
 		//Debug.Log("player moved");
-		LevelStruct workingLevel = levelArr[levelIndex - 1];
+		workingLevel = levelArr[levelIndex - 1];
 		//Debug.Log("workingLevel updated");
-		monsterArr = new GameObject[workingLevel.totalMonsters];
+		monsterArr = new GameObject[100,100];
 		//Debug.Log("monsterArr updated");
 		//monsterArr = new GameObject[workingLevel.totalMines];
-		monsterSpawner.SpawnMonsters(workingLevel.stumps,
-									workingLevel.vasils,
-									workingLevel.saucer1s,
-									workingLevel.mine_boxes,
-									workingLevel.mine_spikeballs);
+		monsterSpawner.SpawnMonsters(workingLevel.monster_stump1_amount,
+									workingLevel.monster_vasil1_amount,
+									workingLevel.monster_saucer1_amount,
+									workingLevel.mine_box_1es,
+									workingLevel.mine_spikeball1_amount);
 		//Debug.Log("monsters spawned");
 		wave++;
 		Debug.Log("Level " + (currentLevel) + " created");
 	}
 
-	void ClearMonsters() {
-		for (int i = 0; i < monsterArr.Length; i++) {
-			Destroy(monsterArr[i]);
+	public static void ClearMonsters() {
+		for (int r = 0; r < monsterArr.GetLength(0); r++) {
+			for (int c = 0; c < monsterArr.GetLength(1); c++) {
+				Destroy(monsterArr[r,c]);
+			}
+			//Destroy(monsterArr[i]);
 		}
+		monstersAlive = 0;
 	}
 
-	void ClearMines() {
+	public static void ClearMines() {
 		for (int i = 0; i < monsterArr.Length; i++) {
 			//Destroy(monsterArr[i]);
 		}

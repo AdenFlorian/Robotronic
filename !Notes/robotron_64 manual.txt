@@ -1,0 +1,1050 @@
+   _____          _            _ 
+  |     \        | |        __| |__                           
+  |  <>  |       | |       |__   __|                       ****   *  *
+  |     /   ___  | |_    ___  | |   |\_   ___  |\____     *      *  *
+  |  _  \  /   \ |   \  /   \ | | _ |  / /   \ |  _  \   * * *  ******
+  | | \  \|  <> || <> ||  <> || |/ /| | |  <> || | | |   *   *    *  
+  |_|  \_| \___/ |___/  \___/ \___/ |_|  \___/ |_| |_|   ****    *
+ 
+
+                        Written By: mayonnaise
+                 Contact me at: mayonnaise47@yahoo.com
+                              Version 1.1
+
+     
+WHAT?! How insulting, there are absolutely NO guides for this game. This 
+forgotten Nintendo 64 game is crying out for a good FAQ...
+ 
+
+                    * * * * * * * * * * * * * * * * *
+                    *       TABLE OF CONTENTS       *
+                    * * * * * * * * * * * * * * * * *
+
+                CHAPTER 1 - Revision History
+                CHAPTER 2 - Robotron 64 Story
+                CHAPTER 3 - Your Character and Fellow Characters
+                CHAPTER 4 - Default Controls
+                CHAPTER 5 - Gameplay Skills
+                CHAPTER 6 - Different Level Types
+                CHAPTER 7 - Electrodes and Power-Ups
+                CHAPTER 8 - Enemies                 
+                CHAPTER 9 - Yellow and Blue Guardians
+                CHAPTER 10 - Codes, Tricks, and Secrets 
+                CHAPTER 11 - Credits
+                CHAPTER 12 - Legal Info
+
+
+------------------------------------------------------------------------
+  CHAPTER 1 - Revision History
+------------------------------------------------------------------------
+
+
+Thursday, June 20th, 2002 - Version 1.1
+
+Ooooh...I ALWAYS do that! Everytime I say "this is the final version..." 
+I always end up updating again! Well I had a good reason too...fixed a 
+width problem in the guide, made the format nicer, and updated the legal 
+section and contributor info. Oh yah, I also changed the "Version: Done" 
+name...I don't know what I was thinking on that one, kinda sounded like 
+I was making a baked potato.
+
+
+Saturday, July 28th, 2001 - Version 1.0  
+
+It turns out that I did find an alarming error. It my haste to get this 
+guide posted, I completely forgot about writing Chapter 11! Well it's 
+written. Along with those shenanigans, I have added some more details on 
+how to post this FAQ on websites which will be a standard section in my 
+guides to come. Also added is more information about Robotron bonus 
+games. I can now safely say, I'm completely done here.
+
+
+Friday, July 27th, 2001 - Version 0.9 
+
+I'm completely done with everything in this entire guide. Only way I'd 
+update now is if I find an alarming error or something of importance is 
+missing. I may update if I get a reader contribution, yeah right... ;)
+
+
+------------------------------------------------------------------------
+  CHAPTER 2 - Robotron 64 Story 
+------------------------------------------------------------------------
+
+
+-- Coming word for word, straight from the Robotron manual:
+
+ROBOTRON: THE STORY
+
+In 2084, inspired by his never ending quest for progress, man perfects 
+The Robotrons, a robot species so advanced that man is inferior to his 
+own creation. Guided by their infallible logic, The Robotrons conclude 
+the human race is inefficient and therefore, must be destroyed.
+
+You are the last hope of mankind. Due to a genetic engineering error you 
+possess superhuman powers. Your mission is to stop the Robotrons and 
+save the last human family.  
+
+
+------------------------------------------------------------------------
+  CHAPTER 3 - Your Character and Fellow Characters
+------------------------------------------------------------------------
+
+
+********EUGENE********
+
+
+You only control one character in Robotron 64, and he is a funny little 
+man named Eugene. Eugene -- the Lean, Mean, Robotron Killing Machine. 
+Eugene is a genetically enhanced human making him strong enough to fight 
+against the evil army of Robotrons. He sports a white suit, black 
+gloves, purple-tinted scuba goggles, and a large bald head. However, the 
+most important feature of the guy is that he has a powerful pulse cannon 
+attached to his left arm. This allows him to destroy the Robotrons. 
+Unfortunately, Eugene has no health meter, so touching a Robotron or 
+obstacle means instant death. 
+
+
+********THE LAST HUMAN FAMILY********
+
+
+The are a few other characters in Robotron 64, but you can't control any 
+of them. Walking around the arena will be family members: There's Mom, 
+Dad, Little Mikey, and Grandpa. You can only save these members of The 
+Last Human Family from being taken away by the Hulk type Robotrons. Just 
+touch a family member to rescue it. Each family member gives you a nice 
+amount of points too.  
+
+
+------------------------------------------------------------------------
+  CHAPTER 4 - Default Controls
+------------------------------------------------------------------------
+
+
+This section is here to guide you through the extremely versatile, yet 
+simple controls of Robotron 64. It's definitely makes fine use of the 
+Nintendo 64 controller and a good arcade port. Notice, I said "default" 
+controls. Controls may be changed in the Set-Up Menu of the game before 
+you begin playing. I don't recommend changing anything until you have at 
+least played the game for a few hours.  
+
+
+********BUTTON FUNCTIONS********
+
+
+<< Start Button >> 
+Pause your game or confirm something on menus.
+
+<< Analog Joystick >> 
+Move your character, Eugene, around the arena.
+ 
+<< Directional Control Pad >> 
+Same function as the Analog Joystick. For advanced players, I highly 
+recommend the joystick over the Control Pad. 
+ 
+<< A and B Buttons >> 
+The A Button confirms something on a menu, and the B Button cancels it. 
+Unlike most other Nintendo 64 games, you use the camera buttons much 
+more then these two.
+
+<< L and R Buttons >>
+Change the view of the camera. There's many options, including Arena and 
+3rd Person view. Arena view is most superior to viewing all the action 
+so you don't get yourself killed.
+
+<< Four Camera Buttons >>
+These are the buttons you will be pressing 90% of the time when playing. 
+Use there to fire off Eugene's green pulse cannon. 
+
+<< Z Button >>
+This is not used at all in Robotron 64. 
+
+
+********SOME DETAILED FIRING CONTROLS********
+
+
+From Eugene's position on the Arena, he is able to fire in any direction 
+at his enemies. Press the Camera-Up button to fire up, Camera-Left to 
+fire left, ect. You get the idea. If you press two camera buttons at the 
+same time, like Camera-Right and Camera-Up, Eugene will fire at a 
+diagonal angle, very useful for corners...see below:
+
++-------------+
+|  *   ^   *  |
+|   \  |  /   |    
+|    \ ^ /    |  
+| *- < C > -* |
+|   /  v \    | 
+|  /   |  \   |
+| *    *   *  |     
++-------------+
+
+
+------------------------------------------------------------------------
+  CHAPTER 5 - Gameplay Skills
+------------------------------------------------------------------------
+
+
+********ROBOTRONICS 101********
+
+
+<< Object of Playing >>
+The basic idea of gameplay in Robotron 64 is simple. Kill them before 
+they kill you. More specifically, every level consists of a simple arena 
+either square or octagon shaped. Kill all the Robotrons that appear on 
+the arena to move on to the next level. The high the level number, the 
+more enemies that appear, the faster they are, and the stronger their 
+variety. For complete enemy details, check chapter 8. Your game lasts 
+until you beat it, you run out of lives, or you decide to quit. You can 
+resume later if preferred. 
+
+<< Keeping Your Character Alive >>
+Quite simply, don't get hit! The character you control, Eugene, only has 
+one hit. The instant he touches say a mine, or a Robotron, you will lose 
+a life. Always stay moving! Learn to gauge how fast the enemies are 
+moving and what the safe spots are. A safe spot one moment may be a 
+deathtrap the next -- this game takes PRACTICE.
+
+<< The Camera is Your Friend >>
+There are many camera views. However, find they camera view you like 
+best, and stick with it! If you keep changing you camera, you will get 
+distracted and die ("Arena" view is probably the single most versatile).
+
+<< Practice, Practice, Then Practice Some More >>
+There's only so much a guide can do for you on a game like this. You 
+must have raw skill to beat this game, so practice! It took me a while 
+just to beat the game on easy mode...  
+
+
+********ADVANCED STRATEGIES********
+
+
+<< Edge Bounce >>
+The Edge Bounce move is the move you should be performing 90% of the 
+time while playing. Run along all the four or eight (if the stage is one 
+of the octagonal ones) edges of the arena constantly firing out at the 
+center. This will wipe out most of the enemies. Make sure to fire behind 
+yourself occasionally to get rid of ones following your tail.
+
+       Arena                        
++------------------+   C  = Arena center.
+|  <-------------  |  --> = Path Eugene is running.
+| |              ^ |
+| |              | |
+| |       C      | |
+| |              | |             Sounds simple right?
+| v              | |
+|  ------------->  |
++------------------+
+
+
+<< Corner Defense >>
+This should be used sparingly, because in the end its almost a death 
+sentence for Eugene. The only time you should do it is when the enemies 
+are simply moving too fast and you need a last ditch effort to kill as 
+many enemies as possible before losing another life. Position Eugene as 
+far in a corner as possible. Doesn't matter which one. Then fire at a 45 
+degree angle out into the center of the arena. The enemies will filter 
+into the corner and be blown to bits. That is, until so many bunch 
+together they get past the laser fire and kill Eugene. That usually 
+takes a while though, so your sure to take out tons of enemies. 
+
+       Arena                                        
++------------------+   C  = Arena center.
+|                  |  --* = Path of the pulse fire.
+|      *           |   E  = Eugene's location.
+|     /            |
+|    /    C        |
+|   /              |           ...and, this DOES NOT WORK WITH
+|  /               |           the octagonal arenas, as the corners 
+|E                 |           are too wide.
++------------------+
+
+
+<< Outside Loop >> 
+This move should only be performed when you have acquired a two-way 
+pulse upgrade. See power-up section about that in Chapter 7. Start at 
+one of the sides, then immediately run straight down through the middle 
+of the arena, with your pulse cannon firing left and right. This will 
+kill tons of enemies. When you reach the other side of the arena, loop 
+to the outside edge and run along till your two-way runs out.
+
+       Arena                                        
++------------------+   C  = Arena center.
+|  ______          |  --> = Path Eugene is running.
+| /      \         |   E  = Eugene’s starting location.
+| |      |         |
+| |      |C        |
+| v      |         |
+|        |         |                
+|        E         |
++------------------+
+
+
+------------------------------------------------------------------------
+  CHAPTER 6 - Different Level Types
+------------------------------------------------------------------------
+
+
+Levels in the game consist of a basic playing arena. However, as you're 
+playing through the game the level backgrounds and some of the obstacles 
+will change.
+
+
+********BONUS GAME********
+
+
+After you beat 20 levels, you will be able to play a bonus game. This 
+consists of Eugene placed on an arena, with enemies randomly appearing 
+and running in at high speed...take out as many as possible for tons of 
+points and 1-UP life bonuses. YOU CANNOT die. All the Robotrons only 
+take one or two hits to destroy and Bee Robotrons are only found in the 
+bonus games.
+
+
+********EASY MODE******** 
+
+
+LEVELS 30-40 take place in the Electrode Forest. Arenas are square but 
+contain large amounts of electrodes scattered about. Oh, and the 
+electrodes are large too!
+
+LEVELS 40-50 take place in the Beam Maze. Arenas have beam posts 
+scattered around, which sometimes create a beam between them...touch the 
+beam and DIE.
+
+LEVEL 50 is infested with tons of Brain enemies. My favorite!
+
+LEVELS 70-80 take place in octagon arenas rather then the standard 
+square shaped. Annoying, because the corner defense is useless here.
+
+LEVEL 99 is a "Battle Royale". Encounter large amounts of all the 
+enemies you saw in the previous 98 levels. 
+
+LEVEL 100 -- Boss: Fight against the Yellow Guardian. Find out what that 
+is in Chapter 9 if you're curious.
+
+
+-- ENDING: Just tells you to go play normal mode. Oh boy... 
+
+
+********NORMAL MODE********
+
+
+LEVELS 30-40 take place in the Electrode Forest. Arenas are square but 
+contain large amounts of electrodes scattered about. Oh, and the 
+electrodes are large too!
+
+LEVELS 40-50 take place in the Beam Maze. Arenas have beam posts 
+scattered around, which sometimes create a beam between them...touch the 
+beam and DIE.
+
+LEVEL 50 is infested with tons of Brain enemies. My favorite!
+
+LEVELS 70-80 take place in octagon arenas rather then the standard 
+square shaped. Annoying, because the corner defense is useless here.
+
+LEVEL 99 is a "Battle Royale". Encounter large amounts of all the 
+enemies you saw in the previous 98 levels. 
+
+LEVEL 100 -- Boss: Fight against the Yellow Guardian. Find out what that 
+is in Chapter 9 if you're curious.
+
+LEVEL 101 is "The war continues". Beginning of the next 100 levels. 
+
+LEVELS 130-140 is coming back again to the Electrode Forest. Arenas 
+contain EVEN more electrodes, some indestructible.    
+
+LEVELS 140-150 take place a second Beam Maze. Arenas have even more beam 
+posts scattered around. Beams appear much more frequently as well...
+
+LEVEL 150 contains tons of every type of Brain enemy. MANY Mega Brains.
+
+LEVELS 170-180 are just more octagon shaped arenas.
+
+LEVEL 199 is a "Battle Royale With Cheese". Encounter tons of every 
+enemy-type in the ENTIRE GAME. Perhaps the most frantic level of all and 
+a huge barrier to pass! 
+
+LEVEL 200 -- Final Boss: Fight against the Blue Guardian. Find out what 
+that is in Chapter 9 if you're curious.
+
+
+-- ENDING: This one is real. You have saved the last human family! 
+
+
+And "Insane Mode" is just like normal, but there's even more Robotrons, 
+and they're faster...this mode is so hard even the Midway bugtesters can 
+only get up to level 153! 
+ 
+
+------------------------------------------------------------------------
+  CHAPTER 7 - Electrodes and Power-Ups
+------------------------------------------------------------------------
+
+
+Electrodes are objects attached to the arena floor, and if Eugene 
+touches one he loses a life. However most of them can be destroyed just 
+by shooting'em. Power-ups are items that you collect to temporarily 
+enhance Eugene. They appear randomly in the arena, but are more prone to 
+appear in the harder levels...
+
+
+********ELECTRODES********
+
+
+<< Electrode 1 >>
+Four-sided pyramid shaped. Standard type. 
+
+<< Electrode 2 >>
+Three-sided pyramid shaped. Standard type. 
+
+<< Electrode 3 >>
+Cube shaped. Standard type.
+
+<< Electrode 4 >>
+Rectangular prism shaped. Giant sized, found in the Electrode Forest.
+
+<< Electrode 5 >>
+Rectangular prism shaped. Standard type.
+
+<< Electrode 6 >>
+Multiple spikes on it. Standard type.
+
+<< Electrode 7 >>
+Diamond shaped electrode. Quite nasty as it can’t be destroyed.
+
+<< Deflector >>
+Metallic gray colored cylinder. If you shoot your pulse cannon at this, 
+any fire that hits it will be amplified and deflected in multiple 
+directions. Great for taking out huge crowds of Robotrons. The real fun 
+is when several Deflectors are close together so a chain reaction 
+ensues...hmmmm yummy.
+
+<< Transformer >> 
+Gray pin with a white sphere on top. Only found in the Beam maze levels, 
+if two of these are close together they will create a beam blocking 
+Eugene's path. Destroy them to stop the beams.
+
+<< Mine >> 
+Flashing orange square on the arena floor. DON'T TOUCH! These are land 
+mines and just one touch will kill Eugene. Some enemies make them...boo.
+
+
+********POWER-UPS********
+
+
+<< Shield >> 
+Red sphere with two spinning rings around it. If you find one of these, 
+immediately grab it! It will let you become invincible for a short 
+period of time. Be warned, when Eugene stops flashing you're no longer 
+invincible.
+
+<< Two Way >>
+Red diamond with two yellow lines. A pulse cannon upgrade for Eugene. 
+Grab it and Eugene will be able to fire in two directions at once for a 
+short time.
+
+<< Three Way >>
+Red diamond with three yellow lines. This is just like a Two Way, except 
+it upgrades Eugene's pulse cannon to fire in three lines straight ahead 
+of him. Definitely the best Power-Up to take out enemies.
+
+<< Four Way >>
+Red diamond with four yellow lines. You shoot in three lines just like a 
+Three Way, except you also lay a trail of mines behind you. Yawn I say. 
+Sometimes I even accidentally run over my own mine trail!
+
+<< Gas Gun >>
+Green and purple gun. Grab the gun and Eugene will fire out a large 
+stream of green gas. The gas clouds expand as they move away, killing 
+anything in their path. Great on bosses and Mega Brains. Lasts for a 
+limited time so make it count! 
+
+<< Flamethrower >>
+Looks like a water gun...this is THE cool weapon to have, allow you to 
+shoot off a huge stream of hot flames. Totally annihilates any Robotrons 
+in close range. 
+
+<< 1-Up >>
+Tiny red statue of a person. These are rarely found, and only in the 
+hardest of levels. Go for ANY OF THEM!
+
+<< Speed Up >>
+Pair of yellow high-top shoes. Getting this item will temporarily allow 
+Eugene to run at high speeds around the arena.
+
+
+------------------------------------------------------------------------
+  CHAPTER 8 - Enemies
+------------------------------------------------------------------------
+
+
+Listed below is every basic enemy you will encounter while playing, 
+along with descriptions and strategies to beat them.  
+
+
+********THE GRUNTS********
+
+
+The Grunts are the workhorse of the Robotron army and make up about 60% 
+of the enemies you will encounter. GRUNT stands for Ground Roving, Unit 
+Network Terminator. All four types are weak, but don't under estimate 
+the way they attack in large groups. You can be overwhelmed within 
+SECONDS in the later levels. 
+
+<< Grunt >> 
+
+Name: Grunt   Health: 1 Hit   Worth: 100 Points
+
+Tiny red and blue colored robot. These guys will always arrive in very 
+large groups. This first type of Grunt is the easiest and just shoot it.
+         
+<< Grunt 2 >> 
+
+Name: Jetpack Grunt   Health: 1 Hit   Worth: 100 Points
+
+Tiny yellow and red colored robot. Like the first type of Grunt, except 
+armed with a deadly jetpack. They will rocket into the sky and fly 
+around for periods of time, then descend back to the Arena floor. Grunt 
+2 is invulnerable when in the air, and watch it's shadow, it may try to 
+stomp you to death. Shoot it when it lands back on the ground.
+ 
+<< Grunt 3 >>  
+
+Name: Psychotic Obelisk Grunt   Health: 2 Hits   Worth: 150 Points
+
+Tiny metallic colored robot. Just like the first Grunt except there 
+bright metallic shell is hard to miss. Which is good, since they're 
+twice as strong, move faster, and STILL arrive in large groups.
+
+<< Grunt 4 >>  
+
+Name: X-Ray Grunt   Health: 2 Hits   Worth: 150 Points
+
+Dark blue and violet colored robot. These are the most annoying types of 
+Grunts. There just as strong as Grunt 3, but move faster and don't stand 
+out! There dark x-ray shell flashes in and out of visibility causing 
+them to sneak up on you if your already preoccupied. Just keep running 
+and fire every chance that you get.
+
+<< Grunt 5 >>
+
+Name: Magical Grunt   Health: Mystery   Worth: Mystery
+
+Check out the secrets in chapter 10 for more info.
+
+
+********THE HULKS (INDESTRUCTABLE)********
+
+
+These guys are found on practically every level. But luckily, the total 
+number of them on the level when you start is the way it stays. You can 
+not destroy them, only get out of their way. They sole purpose is to 
+hunt down any members of The Last Family and dispose of them, 
+permanently. 
+
+<< Hulk >>
+
+Name: Classic Claw Hulk   Health: Unlimited   Score: None
+
+Large green robot armed with two pinching claws. Fairly slow moving, and 
+easy to avoid. Just try to scoop up any humans before they get to close 
+to those claws. 
+
+<< Hulk 2 >>
+
+Name: Vacuum Hulk   Health: Unlimited   Score: None
+
+Large red and purple robot armed with a vacuum nozzle. Slightly faster 
+then the previous Hulk, and it's vacuum has greater range for catching 
+prey. When rescuing humans, be careful not to get sucked up yourself!
+
+<< Hulk 3 >>
+
+Name: Masher Hulk   Health: Unlimited   Score: None
+
+Large red and silver robot armed with two hammers. These guy's hammers 
+have limited range, but it's very fast and aggressive. It will hunt you 
+down if every human is gone...use caution... 
+
+<< Hulk 4 >>
+
+Name: Shredder Hulk    Health: Unlimited   Score: None 
+
+Large metallic robot with a spinning combine at the front of it's body. 
+These guys are just plain tough to avoid -- extremely aggressive and 
+very fast. There spinning blades have a long reach and they will QUICKLY 
+hunt you down when all the humans are gone.
+
+
+********THE SPHEROIDS******** 
+
+
+Fast moving and relentless, all types of these guys are annoying. They 
+all appear like some form of a floating circular ring and manufacture 
+different types of stupid Enforcers, another annoying enemy.
+
+<< Spheroid >>
+
+Name: Spheroid   Health: 2 Hits   Score: 500 Points 
+
+Small red and white colored ring. This first Spheroid is very easy to 
+take out and produces Enforcer type enemies. Just shoot it and be done 
+with it. 
+
+<< Spheroid 2 >>    
+
+Name: Seeder Spheroid   Health: 5 Hits   Score: 1000 Points
+
+Small white and purple broken-ring. These second type are more of a 
+nuisance, but should cause you minimal trouble...take them out before 
+they produce too many of the Enforcer 2.
+
+<< Spheroid 3 >>
+
+Name: Gigantoid Spheroid    Health: 10 Hits   Score: 1500 Points
+
+Gigantic purple and white colored ring. This is where these things get 
+tricky. This guy is very large, making him MUCH easier to accidentally 
+bump into. Not only that, they always move erratically at the edge of 
+the Arena. Producing Enforcer 3, you want to concentrate your firepower 
+and bring these suckers down fast. 
+
+<< Spheroid 4 >>
+
+Name: Megaroid Spheroid   Health: 20 Hits   Score: 1500 Points
+
+Gigantic white and green broken-ring. Ouch is all I can say! These guys 
+are giant-sized, extremely fast, and very hard to hit. They take quite a 
+beating before being taken down...don’t let them hang around too long, 
+or you will definitely be overwhelmed with the mine-producing Enforcer 4 
+that they make. 
+
+
+********THE ENFORCERS********
+
+
+They all appear as a small pod of some shape. These guys are more of an 
+annoyance then any real threat, however Enforcer 4 can give you quite a 
+headache. There sole purpose is to simply disrupt you from blasting the 
+other Robotrons.
+
+<< Enforcer 1 >>
+
+Name: Enforcer   Health: 1 Hit   Score: 150 Points
+
+Blue spinning square with four fins. Spawned from Spheroids. What can I 
+say, just shoot it. All it will do is try to fly straight into Eugene.
+
+<< Enforcer 2 >>
+
+Name: Seeder Enforcer   Health: 1 Hit   Score: 250 Points
+
+Tan colored pod with four legs. Spawned from Seeder Spheroids. Like the 
+first Enforcer, except with the added annoyance that he tries to place 
+mines around the arena. Avoid the mines, kill the Enforcer. 
+
+<< Enforcer 3 >>
+
+Name: Electrobot Enforcer   Health: 2 Hits   Score: 300
+
+Large green spinning square with four fins. Spawned from Gigantoid 
+Spheroids. This guy is just an upgraded version of Enforcer 1 and will 
+rocket straight at you at super speed. Dodge his charge and eliminate 
+him as quickly as possible.
+
+<< Enforcer 4 >> 
+
+Name: Deadly Super Seeder Enforcer   Health: 3 Hits   Score: 500 Points
+
+Violet colored pod with four legs. Spawned from Megaroid Spheroids. Run, 
+very far away. These guys attempt to get up close to you then enclose 
+you with mines... 
+
+
+********THE BRAINS********
+
+
+Oh there so squishy and lovable. These guys are the hardest enemy type 
+in the game. The range from difficult, to insane to bring down. Their 
+brain waves are the most effective weapon in the game.
+
+Brain Wave ~ All of the brain type enemies shoot off little pieces of
+             energy that are clear colored. Depending on the Brain type,
+             they can shoot many at the same time. These will follow you
+             around the Arena like missiles until you destroy them or
+             they destroy you. They are not worth any points though.
+
+<< Brain >>
+
+Name: Brain   Health: 1 Hit   Score: 500 Points
+
+White robot with a medium-sized blue head. Your basic Brain enemy. These 
+guys can only fire off one Brain Wave at a time and are slow moving. 
+They appear in groups however so eliminate them quickly.  
+   
+<< Brain 2 >>
+
+Name: Surgeon Brain   Health: 2 Hits   Score: 750 Points
+
+White robot with a large pink head. These guys are the most annoying 
+type of the Brains, as each fires off two Brain Waves at a time and they 
+always appear in groups. Stronger and faster then you average Brain.
+
+<< Brain 3 >>
+
+Name: Mega Brain   Health: 30 Hits   Score: 3000 Points
+
+Giant white robot with a huge green head. This guy is the STRONGEST 
+enemy in the game you will face, and also the LARGEST. Lucky for you 
+they only appear one at a time or in pairs. Each Mega Brain is capable 
+of shooting off over 10 Brain waves at a time. It's going to take at 
+least 15 seconds of constant fire to bring this guy down...or, you could 
+use a Flamethrower if one is nearby...  
+
+<< Brain 4 >>
+
+Name: Slug Brain   Health: 8 Hits   Score: 1000 Points
+
+Green brain-shaped slug that leaves a trail behind. I don't know what’s 
+worse, these guys or the Mega Brains. The Slug Brain may be weaker, but 
+it's much more agile then the Mega Brain and shoots off Brain Waves 
+faster. They appear in large groups too. Fire at will! 
+
+
+********THE QUARKS********
+
+
+Quarks don't attack, and are nothing but floating factories that produce 
+tanks.  
+
+<< Quark >>
+
+Name: Quark   Health: 1 Hit   Score: 1000 Points
+
+Purple floating rectangle with a yellow top. Produces your basic Tank 
+Robotron. Just get rid of them when they appear on the arena.
+
+<< Quark 2 >>
+
+Name: Turbo Quark   Health: 2 Hits   Score 1500 Points
+
+Sky blue floating rectangle a with yellow top. Moving faster and 
+producing more aggressively then the basic Quark, this guy makes Shadow 
+Tanks. Shoot it down when you get a chance. 
+
+<< Quark 3 >>
+
+Name: Super Quark   Health: 2 Hits   Score: 2000 Points
+
+Red floating UFO with a flashing top. This guy actually poses some form 
+of challenge since it produces Silotron Tanks. They move fast along the 
+arena to avoid your fire.
+
+<< Quark 4 >> 
+
+Name: Mega Quark   Health: 3 Hits   Score: 2500 Points 
+
+Green floating UFO with a flashing top. Take a Super Quark, make it 
+faster, stronger, more aggressive, and you have the Mega Quark. These 
+guys produce the super deadly Ejector Tanks which are trouble enough. 
+Quickly annihilate any Mega Quarks before they can spawn tanks.
+
+
+********THE TANKS********
+
+
+Produced from the Quarks, the four different types of tanks will make 
+you stay quite unpleasant when they hurl their projectiles at you. The 
+stronger the tank the stronger their projectile. Good luck getting rid 
+of the Ejector Tanks...  
+
+<< Tank >>
+
+Name: Classic Tank   Health: 1 Hit   Score: 200 Points
+
+Dark tan colored tank that shoots off one shell at a time. Not much off 
+a trouble at all. Dodge the projectiles and wipe them out.
+
+<< Tank 2 >>
+
+Name: Shadow Tank   Health: 2 Hits   Score: 250 Points
+
+Blue and tan colored tank that shoots off two shells at a time. Fancy 
+name for an enemy that's nothing special. Just an upgraded version of 
+the first tank.
+
+<< Tank 3 >>
+
+Name: Silotron Tank   Health: 3 Hits   Score: 500 Points
+
+Tank colored with army camouflage that shoots off red tissue-seeking 
+missiles. Their fast and effective. When they fire off a missile, it 
+will track you around the arena until you get rid of it. Get rid of both 
+the projectiles and tanks.  
+
+<< Tank 4 >>
+
+Name: Ejector Tank   Health: 4 Hits   Score: 1000 Points
+
+Gray and tan colored tank with a flashing top. Ejects both Nanobyte and 
+Dynobyte fleas into arena which attempt to cling on to your character 
+Eugene. You know your in trouble when you get a 1000 points just to kill 
+a tank. These guys are definitely the most annoying enemy in the game.
+
+
+********ADDITIONAL ENEMIES********
+
+
+<< Nanobyte >>
+
+Name: Nanobyte Flea  Health: 1 Hit   Score: 200 Points
+
+Tiny white and blue flea robot. These guys are nasty little buggers. 
+When released into the arena from the Ejector Tanks they follow Eugene 
+around and attempt to latch on to him. The more latched on, the slower 
+Eugene moves. If Eugene gets five or more on him, you will lose a life.
+
+<< Dynobyte >>
+
+Name: Dynobyte Flea  Health: 1 Hit   Score: 200 Points
+
+Tiny red and white flea robot. If you thought Nanobytes were bad, these 
+guys are terrible. If just one of them latches on to Eugene, it explodes 
+causing him to lose a life. 
+
+<< Ant >>
+
+Name: Minion Ant   Health: 1 Hit   Score: 100 Points
+
+Red and purple colored ant. These guys are even easier to get rid of 
+then Grunts. Just shoot them when they appear in their large groups. 
+When the Ants appear, it's a sign your closing in on a Yellow or Blue 
+Guardian. 
+
+<< Progs >>
+
+Name: Programmed Human   Health: 1 Hit   Score: None
+
+A human that has gone berserk and is running around the arena. If any 
+human happens to be struck by a Brain Wave from one of the Brain 
+enemies, then it automatically turns into a Prog. All you can do is kill 
+them before they kill you. 
+
+
+------------------------------------------------------------------------
+  CHAPTER 9 - Yellow and Blue Guardians
+------------------------------------------------------------------------
+
+
+When playing a game of Robotron 64, on level 100 you will encounter the 
+first boss of the game, the Yellow Guardian. The Blue Guardian is 
+located on level 200.
+
+<< Yellow Guardian >>                 
+            
+~~ Easy Mode ~~                Difficulty: 4/10
+Ignore and avoid the Yellow Guardian and take out the other Robotrons 
+that appear. After there all gone, collect power-ups and take out the 
+Guardian itself.  
+
+~~ Normal Mode ~~              Difficulty: 6/10
+Instead of attacking the Robotrons, immediately collect power-ups and 
+concentrate all your firepower on the Guardian. Once it's gone your free 
+to get rid of the Robotrons. 
+
+~~ Insane Mode ~~              Difficulty: 10/10
+First, I hope that you have at least 10 lives to spare. Second, collect 
+every power up that you possibly can and blast anything in sight while 
+doing the Wall Bounce move. When things get too fast, do the Corner 
+Defense and kill as much as possible. 
+
+<< Blue Guardian >>
+
+~~ Easy Mode ~~                Difficulty: N/A
+You don't fight the Blue Guardian when playing easy mode.
+
+~~ Normal Mode ~~              Difficulty: 10/10 
+This guy is one tough tub of lard. I wasted 16 lives trying to beat him! 
+Just fire at will and run like crazy. A little luck couldn't hurt 
+either...you probably wanted a better strategy then that, eh? ;)
+
+~~ Insane Mode ~~              Difficulty: 20/10 
+I've never actually beaten this guy without cheating to get to him...
+
+
+------------------------------------------------------------------------
+  CHAPTER 10 - Codes, Tricks, and Secrets
+------------------------------------------------------------------------
+
+
+********TRICKS FOR HIGHER SCORES********
+
+
+<< A Hulking Good Time >>
+Even though the Hulk enemies are indestructible, did you know you can 
+get some points from them? Make sure to leave at least one enemy in the 
+level alive. Preferably a single tank. Now have all the Hulks in the 
+level bunch into one group while they are following behind you, then 
+fire your pulse cannon at them. Every hit on a Hulk gives you 100 more 
+points. Milk every Hulk until they stop giving points.
+
+<< Tank Trouble >>
+Similar to the previous trick. Instead of immediately killing a Quark 
+enemy, let them continually produce tanks. Kill the tanks for more 
+points. You can theoretically do this forever. 
+
+<< Human Saved, is a Human Earned >>
+Rescue every single human you possibly can to get massive bonus points. 
+Each human is worth a whooping 4000 points -- that's 25% more then 
+killing a Mega Brain. 
+
+
+********SKIPPING LEVELS********
+
+
+Sometimes, you will be able to warp and skip past levels while playing. 
+In certain levels a "Magical Grunt" will appear, which is a Grunt that 
+he flashes. Destroy him and a Level Gate will appear, which will warp 
+Eugene when he walks into it. You can be warped forward anywhere from 
+one to EIGHT levels.
+
+
+********ROBOTRON 64 CODES********
+
+
+Crave has included several codes that can be entered by using the 
+controller...directions refer to the control stick and C-something is a 
+camera button.
+
+
+<< Select Any Level >>
+
+On the Set-Up menu accessed from the Main Menu, enter this: 
+Down, Up, C-Left, Down, C-Left, C-Right, Down, C-Right.
+
+
+<< Start a Game With 50 Lives >> 
+
+On the Set-Up menu accessed from the Main Menu, enter this:
+Up, Up, Down, Down, Left, Right, Left, Right, C-Left, C-Right, C-Left,
+C-Right. 
+
+
+<< Shield Power-Up >>
+
+You can only use this code five times a level. While playing in a level:
+Down, Left, C-Left, C-Right.
+
+ 
+<< Speed-Up Power-Up >>
+
+Same as previous code. While playing in a level press:
+Left, Left, Right, Right, C-Up.
+
+
+<< 2-Way Power-Up >>
+
+Ditto. While playing in a level press:
+Up, C-Up, Up, C-Up.
+
+
+<< 3-Way Power-Up >>
+
+Ditto. While playing in a level press:
+Right, Right, C-Left, C-Down.
+
+
+<< 4-Way Power-Up >>
+
+Ditto. While playing in a level press:
+Down, Down, Up, C-Right.
+
+
+<< Get Armed With a Gas Gun >>
+
+Ditto. While playing in a level press:
+Up, Down, C-Right, C-Left.
+
+
+<< Get Armed With a Flamethrower >>
+
+Ditto. While playing in a level press:
+Down, Right, Down, Right, C-Right.
+
+
+------------------------------------------------------------------------
+  CHAPTER 11 - Credits
+------------------------------------------------------------------------
+
+
+*People
+
+- Me, for writing this entire guide. I deserve some credit!
+ 
+
+*Internet
+
+- CJayC, for posting the guide.
+- www.GameFAQs.com, hopefully that's where your reading this guide. 
+- www.GameWinners.com, since I did get some Robotron 64 codes from there
+  website. It's been a while since I played the game...
+
+
+* Companies
+
+- Nintendo, since it's there system...yawn.
+- Crave Entertainment, for porting the classic arcade Robotron to the
+  Nintendo 64...and hey, it actually doesn't suck, either!
+
+
+------------------------------------------------------------------------
+  CHAPTER 12 - Legal Info
+------------------------------------------------------------------------
+ 
+
+This guide may ONLY appear on the following site:
+
+- GameFAQs <www.GameFAQs.com>
+
+That's because I DIRECTLY send my FAQs there. It's so irritating when 
+people have outdated or badly-updated versions of my FAQs. I would 
+always get a lot of emails saying "update your guide" or "where's the 
+newest version of your guide." This note should hopefully fix this...
+
+If you want to use this FAQ, webmasters, take note:
+
+
+* Webmasters do NOT:
+
+
+Post this guide directly on your site. This doesn't apply to GameFAQs,
+as shown above.
+
+
+* Webmasters please DO:
+
+
+If you want to post this FAQ, do NOT post it directly. Instead link to 
+the page on GameFAQs that lists ALL the guides for the game. In other
+words, DON'T link to the URL that ends with ".txt" or ".doc", which is
+the actual text guide. Again, nothing that ends with ".txt" or ".doc" 
+This is all in the GameFAQs' legal section...
+
+This FAQ may not be used in any magazine, video game guide, or any 
+possible form of printed or electronic media. It may not be used in any 
+form of commercial efforts for your website or place of business. It 
+cannot be given away as a free item, for profit, for promotional 
+purposes, or given away in any situation whatsoever. 
+
+All characters, places, or objects are copyrighted by their respective 
+companies. I am in no way affiliated with Midway, Crave, or any other 
+companies that were involved with the production of this game. 
+
+Document © 2002 mayonnaise
+All rights reserved 
+
+
+
+                           ~ End of Document ~
+

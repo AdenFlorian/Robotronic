@@ -4,8 +4,8 @@ using System.Collections;
 public class Level : MonoBehaviour {
 
 	protected int current;
-	protected int stumps;
-	protected int mine_box;
+	protected int monster_stump1_amount;
+	protected int mine_box_1;
 	protected string name;
 	protected string groundMaterial;
 	protected string wallMaterial;

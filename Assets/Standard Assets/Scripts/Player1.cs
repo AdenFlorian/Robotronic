@@ -52,6 +52,12 @@ public class Player1 : MonoBehaviour {
 		// shoots
 		UpdateShootingStuff();
 
+		// kill all button
+		if (Input.GetKeyDown(KeyCode.Q)) {
+			Main.ClearMonsters();
+			Main.ClearMines();
+		}
+
 		
 	}
 
@@ -71,7 +77,7 @@ public class Player1 : MonoBehaviour {
 	}
 
 	void OnTriggerEnter(Collider other) {
-		Debug.Log("ontriggerenter triggered");
+		Debug.Log("PLAYER 1 ontriggerenter triggered");
 		if (String.Compare(other.tag, "enemy", false) == 0) {
 			KillPlayer();
 		}

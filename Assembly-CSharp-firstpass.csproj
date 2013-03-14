@@ -52,12 +52,12 @@
      <Compile Include="Assets\Standard Assets\Scripts\LevelStruct.cs" />
      <Compile Include="Assets\Standard Assets\Scripts\Main.cs" />
      <Compile Include="Assets\Standard Assets\Scripts\MainMenu.cs" />
-     <Compile Include="Assets\Standard Assets\Scripts\Monsters\Enemy_Saucer1.cs" />
-     <Compile Include="Assets\Standard Assets\Scripts\Monsters\Enemy_Stump.cs" />
-     <Compile Include="Assets\Standard Assets\Scripts\Monsters\Enemy_Vasil.cs" />
-     <Compile Include="Assets\Standard Assets\Scripts\Monsters\Mine_Box.cs" />
+     <Compile Include="Assets\Standard Assets\Scripts\Monsters\Mine_Box_1.cs" />
      <Compile Include="Assets\Standard Assets\Scripts\Monsters\Monster.cs" />
      <Compile Include="Assets\Standard Assets\Scripts\Monsters\MonsterSpawner.cs" />
+     <Compile Include="Assets\Standard Assets\Scripts\Monsters\Monster_Saucer_1.cs" />
+     <Compile Include="Assets\Standard Assets\Scripts\Monsters\Monster_Stump_1.cs" />
+     <Compile Include="Assets\Standard Assets\Scripts\Monsters\Monster_Vasil_1.cs" />
      <Compile Include="Assets\Standard Assets\Scripts\Player1.cs" />
      <Compile Include="Assets\Standard Assets\Scripts\ZZNot Used\AudioController.cs" />
      <Compile Include="Assets\Standard Assets\Scripts\ZZNot Used\Switch.cs" />

@@ -6,15 +6,15 @@ public class LevelStruct: ScriptableObject {
 	[HideInInspector]
 	public int current;
 	[HideInInspector]
-	public int stumps;
+	public int monster_stump1_amount;
 	[HideInInspector]
-	public int vasils;
+	public int monster_vasil1_amount;
 	[HideInInspector]
-	public int saucer1s;
+	public int monster_saucer1_amount;
 	[HideInInspector]
-	public int mine_boxes;
+	public int mine_box_1es;
 	[HideInInspector]
-	public int mine_spikeballs;
+	public int mine_spikeball1_amount;
 	[HideInInspector]
 	public string name;
 	[HideInInspector]
@@ -39,7 +39,7 @@ public class LevelStruct: ScriptableObject {
 	}
 
 	public void sumMonsters() {
-		totalMonsters = stumps + vasils + saucer1s + mine_boxes + mine_spikeballs;
+		totalMonsters = monster_stump1_amount + monster_vasil1_amount + monster_saucer1_amount + mine_box_1es + mine_spikeball1_amount;
 	}
 
 	
