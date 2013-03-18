@@ -55,6 +55,7 @@
      <Compile Include="Assets\Standard Assets\Scripts\Monsters\Mine_Box_1.cs" />
      <Compile Include="Assets\Standard Assets\Scripts\Monsters\Monster.cs" />
      <Compile Include="Assets\Standard Assets\Scripts\Monsters\MonsterSpawner.cs" />
+     <Compile Include="Assets\Standard Assets\Scripts\Monsters\Monster_Hulk_1.cs" />
      <Compile Include="Assets\Standard Assets\Scripts\Monsters\Monster_Saucer_1.cs" />
      <Compile Include="Assets\Standard Assets\Scripts\Monsters\Monster_Stump_1.cs" />
      <Compile Include="Assets\Standard Assets\Scripts\Monsters\Monster_Vasil_1.cs" />

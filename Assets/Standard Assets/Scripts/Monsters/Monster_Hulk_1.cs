@@ -1,16 +1,17 @@
 using UnityEngine;
 using System.Collections;
 
-public class Monster_Vasil_1 : Monster {
+public class Monster_Hulk_1 : Monster {
+
+	public static float zPos = 1.06f;
 
 	// Use this for initialization
 	void Start () {
 		levelId = Main.currentLevel;
 		isDead = false;
-		health = 2;
+		health = 999;
 		moveVel = 0.02f;
-		points = 200;
-		zPos = 1.75f;
+		points = 0;
 	}
 	
 	// Update is called once per frame
@@ -18,19 +19,17 @@ public class Monster_Vasil_1 : Monster {
 		if (levelId < (Main.currentLevel)) {
 			Destroy(this.gameObject);
 		}
-		// upon death
-		if (health <= 0) {
-			//death1.Play();
-			//death2.Play();
-			Main.score += points;
-			Main.monstersAlive--;
-			Destroy(this.gameObject);
-		}
+		// upon death - HULKS NEVER DIE MUAHAHA
+		//if (health <= 0) {
+		//	//death1.Play();
+		//	//death2.Play();
+		//	Main.score += points;
+		//	Main.monstersAlive--;
+		//	Destroy(this.gameObject);
+		//}
 
-		transform.LookAt(Main.player1.transform);	// rotates to face the player
-		this.transform.rotation.eulerAngles.Set(0f,
-												0f,
-												transform.rotation.eulerAngles.z);
+		this.transform.LookAt(Main.player1.transform);	// rotates to face the player
+		this.transform.eulerAngles.Set(0, 0, 0);
 
 		//UpdateColor();
 

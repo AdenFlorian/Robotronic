@@ -19,7 +19,7 @@ public class Monster_Saucer_1 : Monster {
 		isDead = false;
 		health = 2;
 		moveVel = 0.02f;
-		points = 200;
+		points = 175;
 		zPos = 1.1f;
 		scaleCounter = 0;
 		maxScale = 1.5f;

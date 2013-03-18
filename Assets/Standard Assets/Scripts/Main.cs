@@ -75,51 +75,56 @@ public class Main : MonoBehaviour {
 		// begin level definitions
 		LevelStruct level1 = LevelStruct.CreateInstance("LevelStruct") as LevelStruct;
 		levelArr[0] = level1;
-		level1.monster_stump1_amount = 5;
-		level1.monster_vasil1_amount = 0;
-		level1.monster_saucer1_amount = 5;
-		level1.mine_box_1es = 0;
+		level1.monster_stump_1 = 5;
+		level1.monster_vasil_1 = 0;
+		level1.monster_saucer_1 = 5;
+		level1.mine_box_1 = 0;
 		level1.sumMonsters();
 		level1.name = "Hello, World!";
 
 		LevelStruct level2 = LevelStruct.CreateInstance("LevelStruct") as LevelStruct;
 		levelArr[1] = level2;
-		level2.monster_stump1_amount = 6;
-		level2.monster_vasil1_amount = 0;
-		level2.mine_box_1es = 4;
+		level2.monster_stump_1 = 6;
+		level2.monster_vasil_1 = 0;
+		level2.monster_hulk_1 = 3;
+		level2.mine_box_1 = 4;
 		level2.sumMonsters();
 		level2.name = "Another day in paradise...";
 
 		LevelStruct level3 = LevelStruct.CreateInstance("LevelStruct") as LevelStruct;
 		levelArr[2] = level3;
-		level3.monster_stump1_amount = 3;
-		level3.monster_vasil1_amount = 4;
-		level3.mine_box_1es = 6;
+		level3.monster_stump_1 = 3;
+		level3.monster_vasil_1 = 4;
+		level3.monster_saucer_1 = 4;
+		level3.mine_box_1 = 6;
 		level3.sumMonsters();
 		level3.name = "I really wish there was some upbeat music playing...";
 
 		LevelStruct level4 = LevelStruct.CreateInstance("LevelStruct") as LevelStruct;
 		levelArr[3] = level4;
-		level4.monster_stump1_amount = 0;
-		level4.monster_vasil1_amount = 10;
-		level4.mine_box_1es = 2;
+		level4.monster_stump_1 = 0;
+		level4.monster_vasil_1 = 10;
+		level4.mine_box_1 = 2;
 		level4.sumMonsters();
 		level4.name = "WTF are these...pills?";
 
 		LevelStruct level5 = LevelStruct.CreateInstance("LevelStruct") as LevelStruct;
 		levelArr[4] = level5;
-		level5.monster_stump1_amount = 3;
-		level5.monster_vasil1_amount = 10;
-		level5.mine_box_1es = 20;
+		level5.monster_stump_1 = 3;
+		level5.monster_vasil_1 = 10;
+		level5.monster_saucer_1 = 6;
+		level5.mine_box_1 = 20;
 		level5.sumMonsters();
 		level5.name = "Bet you wish you played more minesweeper now...";
 
 		LevelStruct level6 = LevelStruct.CreateInstance("LevelStruct") as LevelStruct;
 		levelArr[5] = level6;
-		level6.monster_stump1_amount = 10;
-		level6.monster_vasil1_amount = 10;
-		level6.mine_box_1es = 0;
-		level6.mine_spikeball1_amount = 6;
+		level6.monster_stump_1 = 10;
+		level6.monster_vasil_1 = 10;
+		level6.monster_saucer_1 = 9;
+		level6.monster_hulk_1 = 6;
+		level6.mine_box_1 = 0;
+		level6.mine_spikeball_1 = 6;
 		level6.sumMonsters();
 		level6.name = "Serksth Lerver";
 		// end level definitions
@@ -169,11 +174,12 @@ public class Main : MonoBehaviour {
 		monsterArr = new GameObject[100,100];
 		//Debug.Log("monsterArr updated");
 		//monsterArr = new GameObject[workingLevel.totalMines];
-		monsterSpawner.SpawnMonsters(workingLevel.monster_stump1_amount,
-									workingLevel.monster_vasil1_amount,
-									workingLevel.monster_saucer1_amount,
-									workingLevel.mine_box_1es,
-									workingLevel.mine_spikeball1_amount);
+		monsterSpawner.SpawnMonsters(workingLevel.monster_stump_1,
+									workingLevel.monster_vasil_1,
+									workingLevel.monster_saucer_1,
+									workingLevel.monster_hulk_1,
+									workingLevel.mine_box_1,
+									workingLevel.mine_spikeball_1);
 		//Debug.Log("monsters spawned");
 		wave++;
 		Debug.Log("Level " + (currentLevel) + " created");

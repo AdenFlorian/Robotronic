@@ -17,6 +17,7 @@ public class MonsterSpawner : MonoBehaviour {
 	private GameObject monster_stump_1;
 	private GameObject monster_vasil_1;
 	private GameObject monster_saucer_1;
+	private GameObject monster_hulk_1;
 	private GameObject mine_box_1;
 	private GameObject mine_spikeball_1;
 
@@ -49,10 +50,12 @@ public class MonsterSpawner : MonoBehaviour {
 
 	public void SpawnMonsters(	int monster_stump1_amount, 
 								int monster_vasil1_amount, 
-								int monster_saucer1_amount, 
+								int monster_saucer1_amount,
+								int monster_hulk_1_amount,
 								int mine_box_1es, 
 								int mine_spikeball1_amount) {
 
+		//killable monsters
 		Main.monstersAlive = monster_stump1_amount + monster_vasil1_amount + monster_saucer1_amount;	// When all these monsters are dead, the level is over
 
 		// make mines first
@@ -71,7 +74,9 @@ public class MonsterSpawner : MonoBehaviour {
 
 		makeMonster_Saucer_1(monster_saucer1_amount);
 
-		// make invincible monsters last
+		// make invincible monsters (hulks) last
+
+		makeMonster_Hulk_1(monster_hulk_1_amount);
 
 	}
 
@@ -80,6 +85,10 @@ public class MonsterSpawner : MonoBehaviour {
 	 * 0 - monster_stump1_amount
 	 * 1 - monster_vasil1_amount
 	 * 2 - monster_saucer1_amount
+	 * 
+	 * hulks start at [10,i]
+	 * 
+	 * 10 - monster_hulk_1
 	 * 
 	 * mines start at [50,i]
 	 * 
@@ -129,11 +138,20 @@ public class MonsterSpawner : MonoBehaviour {
 
 	/** END MONSTERS **/
 
-	/** BEGIN UBERS **/
+	/** BEGIN HULKS **/
 
-	// ubers are invincible monsters
+	// hulks are invincible monsters
 
-	/** END UBERS **/
+	void makeMonster_Hulk_1(int amount) {
+		for (int i = 0; i < amount; i++) {
+			monster_hulk_1 = Instantiate(Resources.Load("monster_hulk_1"),
+								FindNextSpawn(Monster_Hulk_1.zPos),	// position.z
+								transform.rotation) as GameObject;
+			Main.monsterArr[10, i] = monster_hulk_1;
+		}
+	}
+
+	/** END HULKS **/
 
 	/** BEGIN MINES **/
 

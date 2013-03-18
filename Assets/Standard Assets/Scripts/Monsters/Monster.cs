@@ -1,7 +1,7 @@
 using UnityEngine;
 using System.Collections;
 
-public class Monster : MonoBehaviour {
+public abstract class Monster : MonoBehaviour {
 
 	public AudioSource hit1;
 	public AudioSource hit2;
@@ -26,7 +26,7 @@ public class Monster : MonoBehaviour {
 
 	protected Vector3 newPos;
 
-	public  float zPos;
+	public float zPos;
 
 	protected bool isHit;
 	protected bool isDead;
