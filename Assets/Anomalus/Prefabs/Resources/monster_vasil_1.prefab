@@ -11,8 +11,8 @@ GameObject:
   - 33: {fileID: 3300000}
   - 65: {fileID: 6500000}
   - 23: {fileID: 2300000}
-  - 114: {fileID: 11400000}
   - 54: {fileID: 5400000}
+  - 114: {fileID: 11400000}
   m_Layer: 0
   m_Name: monster_vasil_1
   m_TagString: enemy
@@ -27,7 +27,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .50088048, y: .269575119, z: 1.75}
+  m_LocalPosition: {x: -1.79368305, y: 3.58600688, z: 1.75229263}
   m_LocalScale: {x: .5, y: .5, z: .5}
   m_Children: []
   m_Father: {fileID: 0}
@@ -84,7 +84,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: .620000005, y: 1.17999995, z: 3.3599999}
+  m_Size: {x: 1.5, y: 1.5, z: 3.3599999}
   m_Center: {x: -.0399999991, y: 0, z: -.99000001}
 --- !u!114 &11400000
 MonoBehaviour:
@@ -103,6 +103,7 @@ MonoBehaviour:
   death2: {fileID: 0}
   ambient1: {fileID: 0}
   ambient2: {fileID: 0}
+  health: 0
   zPos: 0
   levelId: 0
 --- !u!1001 &100100000

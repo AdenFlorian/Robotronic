@@ -15,6 +15,9 @@ public class Player1 : MonoBehaviour {
 	private float velY;
 	private float velZ;
 
+	public float xLimit = 1;
+	public float yLimit = 1;
+
 	// audio
 	public AudioSource shoot1;
 	
@@ -49,6 +52,18 @@ public class Player1 : MonoBehaviour {
 		// applys movement
 		transform.Translate(velX, velY, 0f);
 
+		if (transform.position.x > xLimit) {
+			transform.position = new Vector3(xLimit, transform.position.y, transform.position.z);
+		} else if (transform.position.x < -xLimit) {
+			transform.position = new Vector3(-xLimit, transform.position.y, transform.position.z);
+		}
+		
+		if (transform.position.y > yLimit) {
+			transform.position = new Vector3(transform.position.x, yLimit, transform.position.z);
+		} else if (transform.position.y < -yLimit) {
+			transform.position = new Vector3(transform.position.x, -yLimit, transform.position.z);
+		}
+
 		// shoots
 		UpdateShootingStuff();
 
@@ -77,9 +92,11 @@ public class Player1 : MonoBehaviour {
 	}
 
 	void OnTriggerEnter(Collider other) {
-		Debug.Log("PLAYER 1 ontriggerenter triggered");
+		
 		if (String.Compare(other.tag, "enemy", false) == 0) {
+			Debug.Log("PLAYER 1 collided with enemy");
 			KillPlayer();
+
 		}
 	}
 
@@ -90,8 +107,10 @@ public class Player1 : MonoBehaviour {
 		}
 	}**/
 
-	void KillPlayer() {
+	public void KillPlayer() {
+		Debug.Log("Killing Player");
 		Main.isPlayerAlive = false;
+		Main.isGameOver = true;
 		Main.lives--;
 		Destroy(this.gameObject);
 	}
@@ -99,21 +118,24 @@ public class Player1 : MonoBehaviour {
 
 
 	void UpdateMovement() {
-		if (Input.GetKey(KeyCode.W)) {
-			velY = moveVel * Time.deltaTime;
-		}
+		if (!Main.isGameOver) {
+			if (Input.GetKey(KeyCode.W)) {
+				velY = moveVel * Time.deltaTime;
+			}
 
-		if (Input.GetKey(KeyCode.S)) {
-			velY = -moveVel * Time.deltaTime;
-		}
+			if (Input.GetKey(KeyCode.S)) {
+				velY = -moveVel * Time.deltaTime;
+			}
 
-		if (Input.GetKey(KeyCode.A)) {
-			velX = moveVel * Time.deltaTime;
-		}
+			if (Input.GetKey(KeyCode.A)) {
+				velX = moveVel * Time.deltaTime;
+			}
 
-		if (Input.GetKey(KeyCode.D)) {
-			velX = -moveVel * Time.deltaTime;
+			if (Input.GetKey(KeyCode.D)) {
+				velX = -moveVel * Time.deltaTime;
+			}
 		}
+		
 	}
 
 	void UpdateShootingStuff() {

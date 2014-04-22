@@ -1,7 +1,7 @@
 using UnityEngine;
 using System.Collections;
 
-public abstract class Monster : MonoBehaviour {
+public class Monster : MonoBehaviour {
 
 	public AudioSource hit1;
 	public AudioSource hit2;
@@ -10,7 +10,7 @@ public abstract class Monster : MonoBehaviour {
 	public AudioSource ambient1;
 	public AudioSource ambient2;
 
-	protected float health;		// monster's starting health
+	public float health;		// monster's starting health
 
 	protected int points;	// how many points the monster is worth
 
@@ -35,8 +35,6 @@ public abstract class Monster : MonoBehaviour {
 
 	public int levelId;
 
-	
-
 	// Use this for initialization
 	void Start () {
 	}
@@ -48,6 +46,7 @@ public abstract class Monster : MonoBehaviour {
 
 	void OnTriggerEnter(Collider other) {
 		if (string.Compare(other.tag, "bullet", true) == 0 || string.Compare(other.tag, "deathwall", true) == 0) {
+			Debug.Log("Bullet collided with enemy");
 			health--;
 			renderer.material.color -= new Color(0.0f, 0.1f, 0.1f);
 			Destroy(other.gameObject);

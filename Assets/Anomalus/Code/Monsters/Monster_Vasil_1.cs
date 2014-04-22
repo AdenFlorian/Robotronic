@@ -27,10 +27,11 @@ public class Monster_Vasil_1 : Monster {
 			Destroy(this.gameObject);
 		}
 
-		transform.LookAt(Main.player1.transform);	// rotates to face the player
-		this.transform.rotation.eulerAngles.Set(0f,
-												0f,
-												transform.rotation.eulerAngles.z);
+		if (Main.isPlayerAlive) {
+			//transform.LookAt(Main.player1.transform);	// rotates to face the player
+		}
+
+		//this.transform.rotation.eulerAngles.Set(0f, 0f, transform.rotation.eulerAngles.z);
 
 		//UpdateColor();
 

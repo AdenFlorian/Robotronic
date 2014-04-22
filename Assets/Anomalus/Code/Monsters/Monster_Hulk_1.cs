@@ -27,9 +27,11 @@ public class Monster_Hulk_1 : Monster {
 		//	Main.monstersAlive--;
 		//	Destroy(this.gameObject);
 		//}
-
-		this.transform.LookAt(Main.player1.transform);	// rotates to face the player
-		this.transform.eulerAngles.Set(0, 0, 0);
+		if (Main.isPlayerAlive) {
+			//this.transform.LookAt(Main.player1.transform);	// rotates to face the player
+		}
+		
+		//this.transform.eulerAngles.Set(0, 0, 0);
 
 		//UpdateColor();
 

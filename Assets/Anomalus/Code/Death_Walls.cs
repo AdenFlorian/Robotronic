@@ -17,7 +17,9 @@ public class Death_Walls : MonoBehaviour {
 
 	void OnTriggerEnter(Collider other) {
 		if (String.Compare(other.tag, "wall", false) == 0 || string.Compare(other.tag, "enemy", true) == 0) {
-			
+
+		} else if (String.Compare(other.tag, "Player", false) == 0 ) {
+			other.GetComponent<Player1>().KillPlayer();
 		} else {
 			Destroy(other.gameObject);
 		}

@@ -3,6 +3,12 @@ using System.Collections;
 
 public class Main : MonoBehaviour {
 
+	public MainMenu menuManager;
+
+	public GUIText gameoverGUIText;
+	public GUIText congratsGUIText;
+	public GUIText pressspaceGUIText;
+
 	public LevelStruct Level;
 	private static LevelStruct workingLevel;
 	public MonsterSpawner monsterSpawner;
@@ -34,7 +40,7 @@ public class Main : MonoBehaviour {
 
 	private GameObject camera;	// Main Camera GameObject
 
-	private bool isGameOver = false;
+	public static bool isGameOver = false;
 	private bool levelWon = false;
 
 	// mainmenu, level1, level2, pausemenu, credits
@@ -51,10 +57,11 @@ public class Main : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 
+		isGameOver = false;
 		score = 0;		// starting score at 0
 		wave = 0;		// starting wave - 1 ; wave will increase to 1 when the first level is created by LevelMaker()
 		lives = 3;		// if player dies when lives == 0 then game over
-		spawnPos = new Vector3(-0.3733258f, -0.1376212f, 0.91f);
+		spawnPos = new Vector3(0f, 0f, 0.91f);
 		levelArr = new LevelStruct[200];
 
 		// change this to start game at different levels ( use 4 to start at level 5, etc
@@ -77,7 +84,7 @@ public class Main : MonoBehaviour {
 		levelArr[0] = level1;
 		level1.monster_stump_1 = 5;
 		level1.monster_vasil_1 = 0;
-		level1.monster_saucer_1 = 5;
+		level1.monster_saucer_1 = 0;
 		level1.mine_box_1 = 0;
 		level1.sumMonsters();
 		level1.name = "Hello, World!";
@@ -94,7 +101,7 @@ public class Main : MonoBehaviour {
 		LevelStruct level3 = LevelStruct.CreateInstance("LevelStruct") as LevelStruct;
 		levelArr[2] = level3;
 		level3.monster_stump_1 = 3;
-		level3.monster_vasil_1 = 4;
+		level3.monster_vasil_1 = 0;
 		level3.monster_saucer_1 = 4;
 		level3.mine_box_1 = 6;
 		level3.sumMonsters();
@@ -119,12 +126,12 @@ public class Main : MonoBehaviour {
 
 		LevelStruct level6 = LevelStruct.CreateInstance("LevelStruct") as LevelStruct;
 		levelArr[5] = level6;
-		level6.monster_stump_1 = 10;
-		level6.monster_vasil_1 = 10;
-		level6.monster_saucer_1 = 9;
-		level6.monster_hulk_1 = 6;
-		level6.mine_box_1 = 0;
-		level6.mine_spikeball_1 = 6;
+		level6.monster_stump_1 = 20;
+		level6.monster_vasil_1 = 20;
+		level6.monster_saucer_1 = 29;
+		level6.monster_hulk_1 = 26;
+		level6.mine_box_1 = 20;
+		level6.mine_spikeball_1 = 26;
 		level6.sumMonsters();
 		level6.name = "Serksth Lerver";
 		// end level definitions
@@ -140,24 +147,45 @@ public class Main : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		mA = monstersAlive;
-		if (isGameOver == false) {
+		if (Main.isGameOver == false) {
 			// updates Score GUIText with value of score
 			scoreObject.guiText.text = score.ToString();
 			waveObject.guiText.text = "wave " + wave.ToString();
 			livesObject.guiText.text = "lives X " + lives.ToString();
 			levelNameObject.guiText.text = levelArr[(currentLevel == 0 ? currentLevel : currentLevel - 1)].name;
 		} else {
+			// Show Game Over, press space bar to return to menu
+			if (!congratsGUIText.enabled) {
+				gameoverGUIText.enabled = true;
+			} else {
+				player1.transform.position += new Vector3(0f, 0f, 2f * Time.deltaTime);
+			}
+			pressspaceGUIText.enabled = true;
 			// go to main menu or continue screen if player ran out of lives
 		}
 
 		if (monstersAlive <= 0) {	// monstersAlive is in MonsterSpawner.cs
 			Debug.Log("monstersAlive has reached 0");
-			currentLevel++;
-			
+			if (currentLevel < 5) {
+				currentLevel++;
+
+				
+			} else {
+				currentLevel++;
+				Main.isGameOver = true;
+				congratsGUIText.enabled = true;
+			}
+
 			if (wave == 0) { } else { ClearMonsters(); }		// clears the board of monsters
 			Debug.Log("LevelMaker called");
 			LevelMaker(currentLevel);	// resets and fills monsterArr[], spawns monsters, 
 			Debug.Log("LevelMaker ran successfully");
+			
+		}
+
+		if (Main.isGameOver && Input.GetKeyDown(KeyCode.Space)) {
+			// restart game
+			Application.LoadLevel(0);
 		}
 	}
 
